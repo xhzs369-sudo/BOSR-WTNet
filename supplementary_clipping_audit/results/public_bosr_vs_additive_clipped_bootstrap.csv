@@ -1,0 +1,5 @@
+﻿comparison,metric,favorable_effect,ci95_low,ci95_high,favorable_images,n_images,effect_definition
+BOSR-WTNet vs GenericHead post-clipping,mse,-0.36391622613490837,-0.735030637977974,0.0419802503182642,42,100,relative reduction (%)
+BOSR-WTNet vs GenericHead post-clipping,psnr_db,-0.005711497082575789,-0.02684727196223937,0.0165068767051471,43,100,BOSR - Additive clipped
+BOSR-WTNet vs GenericHead post-clipping,ssim,-0.0012633842229843118,-0.0013849210143087958,-0.00115893418590228,0,100,BOSR - Additive clipped
+BOSR-WTNet vs GenericHead post-clipping,delta_e00,-0.5762013602187951,-0.8562840624118646,-0.3044318887165834,35,100,relative reduction (%)

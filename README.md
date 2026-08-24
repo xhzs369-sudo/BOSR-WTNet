@@ -10,6 +10,8 @@ Official manuscript-facing code snapshot for **BOSR-WTNet: bounded odds-space re
 - metric, bootstrap-statistics and complexity definitions;
 - experiment protocols, split manifests and environment records;
 - efficiency and post hoc LPIPS analysis code and numerical outputs.
+- post-submission additive-clipping audit code and released numerical outputs;
+- official access links and provenance notes for manuscript-related datasets.
 
 ## What is not included
 
@@ -34,6 +36,8 @@ manifests/        CEC train360/dev40 file identities without raw images
 environment/      recorded software environment
 efficiency/       measured efficiency protocol and outputs
 posthoc_lpips/    explicitly post hoc LPIPS analysis
+supplementary_clipping_audit/  additive raw/clipped/BOSR audit and released CSV outputs
+DATASETS.md       official dataset links, roles, provenance and redistribution limits
 ```
 
 ## Environment
@@ -52,6 +56,8 @@ CEC/test/gt/0.png
 ```
 
 Set the `BOSR_PROJECT_ROOT` environment variable when adapting the frozen scripts to another workstation. The scripts retain their historical experiment-directory assumptions, so this snapshot should be treated as manuscript audit code rather than a turnkey training package.
+
+Official access links and the exact roles of CEC, KCL, Kvasir-Capsule and RLE are recorded in [`DATASETS.md`](DATASETS.md). Raw third-party medical images are not redistributed.
 
 ## Minimal model check
 

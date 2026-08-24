@@ -1,0 +1,9 @@
+Fixed existing luminance stratification (not re-estimated in this supplement):
+- Image: CEC test100 underexposed input, decoded RGB in [0,1].
+- Luminance: Y = 0.2126 R + 0.7152 G + 0.0722 B (Rec.709).
+- Spatial region: centered circle with radius 0.45 * min(height,width).
+- Low: mean Y <= 0.062202699482440948.
+- Middle: 0.062202699482440948 < mean Y <= 0.081447303295135498.
+- High: mean Y > 0.081447303295135498.
+- Expected counts: 34 low, 33 middle, 33 high.
+- Purpose: exploratory heterogeneity description only; no model selection or threshold tuning.
